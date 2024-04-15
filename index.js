@@ -1,7 +1,11 @@
+import cors from "cors";
 import express from "express";
 
 const app = express();
 const port = 9000;
+
+// Use the cors middleware
+app.use(cors());
 
 app.get("/users", (req, res) => {
   let users = [
