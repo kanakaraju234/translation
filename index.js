@@ -66,4 +66,100 @@ app.get("/users", (req, res) => {
   return res.json({ status: 200, data: users });
 });
 
+app.get("/users_credentials", (req, res) => {
+  let credentials = [
+    {
+      id: "1",
+      name: "raju",
+      mail: "skkanakaraju@gmail.com",
+      phoneNumber: "8008868653",
+      password: "123",
+      created_at: "02/04/2024",
+      token: "automaticgenerated",
+    },
+    {
+      id: "2",
+      name: "ramu",
+      mail: "ramu@gmail.com",
+      phoneNumber: "8008868653",
+      password: "123",
+      created_at: "02/04/2024",
+      token: "automaticgenerated",
+    },
+    {
+      id: "b8a2",
+      name: "jaanu",
+      phoneNumber: "12345678",
+      email: "skkanakaraju@gmail.com",
+      password: "123",
+      created_at: "2024-04-09T06:49:36.449Z",
+      token: "newtoken",
+    },
+    {
+      id: "407a",
+      name: "priya",
+      mail: "priya@gmail.com",
+      phoneNumber: "8008868653",
+      password: "123",
+      created_at: "09/04/2024",
+      token: "automaticgenerated",
+    },
+    {
+      id: "c80e",
+      name: "divya sai",
+      phoneNumber: "8008868653",
+      email: "skkanakaraju@gmail.com",
+      password: "12345",
+      created_at: "2024-04-09T14:38:13.730Z",
+      token: "newtoken",
+    },
+    {
+      id: "720f",
+      name: "priya",
+      mail: "priya@gmail.com",
+      phoneNumber: "8008868653",
+      password: "123",
+      created_at: "09/04/2024",
+      token: "automaticgenerated",
+    },
+    {
+      id: "50f2",
+      name: "v kanakaraju",
+      phoneNumber: "7036266076",
+      email: "rajukanaka142@gmail.com",
+      password: "raju@123",
+      created_at: "2024-04-12T04:08:52.783Z",
+      token: "newtoken",
+    },
+    {
+      id: "97b4",
+      name: "",
+      phoneNumber: "",
+      email: "",
+      password: "",
+      created_at: "2024-04-13T08:42:31.642Z",
+      token: "newtoken",
+    },
+    {
+      id: "c2af",
+      name: "VECHALAPU SANTHOSH",
+      phoneNumber: "09177072241",
+      email: "santhurock499@gmail.com",
+      password: "santhu@123",
+      created_at: "2024-04-13T08:43:13.019Z",
+      token: "newtoken",
+    },
+    {
+      id: "b5e5",
+      name: "VECHALAPU SANTHOSH",
+      phoneNumber: "09177072241",
+      email: "santhurock499@gmail.com",
+      password: "santhu@123",
+      created_at: "2024-04-13T08:45:14.573Z",
+      token: "newtoken",
+    },
+  ];
+  return res.json({ status: 200, data: credentials });
+});
+
 app.listen(port);
