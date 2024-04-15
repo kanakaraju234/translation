@@ -71,7 +71,7 @@ app.get("/users", (req, res) => {
 });
 
 app.get("/users_credentials", (req, res) => {
-  const { email } = req?.query;
+  const { mail } = req?.query;
   console.log("GET", req.query);
   let credentials = [
     {
@@ -165,10 +165,11 @@ app.get("/users_credentials", (req, res) => {
       token: "newtoken",
     },
   ];
-  if (email?.length > 0) {
+  console.log("Starting", mail);
+  if (mail?.length > 0) {
     console.log("inside");
     let filterLogin = credentials?.find((item) =>
-      item?.email?.toLowerCase().includes(email?.toLowerCase())
+      item?.email?.toLowerCase().includes(mail?.toLowerCase())
     );
     console.log(filterLogin);
     return res.json({ status: 200, data: filterLogin });
